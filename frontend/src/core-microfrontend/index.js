@@ -13,4 +13,4 @@ if (process.env.NODE_ENV === "development") {
 }
 
 export { Header, Footer };
-export { CurrentUserContext } from "./contexts/CurrentUserContext";
+export { CurrentUserContext } from "/contexts/CurrentUserContext";
