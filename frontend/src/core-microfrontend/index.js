@@ -3,6 +3,8 @@ import "./styles/header/header.css";
 import "./styles/footer/footer.css";
 import "./styles/page/page.css";
 import "./styles/content/content.css";
+import "./styles/popup/popup.css";
+import "./styles/popup/_is-opened/popup_is-opened.css";
 
 export { default as Header } from "./components/Header";
 export { default as Footer } from "./components/Footer";
