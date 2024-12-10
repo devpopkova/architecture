@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../blocks/login/login.css';
+import '../login/login.css';
 
 function Login ({ onLogin }){
   const [email, setEmail] = React.useState('');
@@ -12,7 +12,7 @@ function Login ({ onLogin }){
       email,
       password
     }
-    onLogin(userData);
+      onLogin(userData);
   }
   return (
     <div className="auth-form">

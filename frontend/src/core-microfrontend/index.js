@@ -1,16 +1,7 @@
-import ReactDOM from "react-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
-if (process.env.NODE_ENV === "development") {
-    ReactDOM.render(
-    <div>
-    <Header />
-    <Footer />
-    </div>,
-    document.getElementById("root")
-);
-}
-
-export { Header, Footer };
-export { CurrentUserContext } from "/contexts/CurrentUserContext";
+export { default as Header } from "./components/Header";
+export { default as Footer } from "./components/Footer";
+export { default as ImagePopup } from "./components/ImagePopup";
+export { default as InfoTooltip } from "./components/InfoTooltip";
+export { default as PopupWithForm } from "./components/PopupWithForm";
+export { default as ProtectedRoute } from "./components/ProtectedRoute";
+export { CurrentUserContext } from "./contexts/CurrentUserContext";

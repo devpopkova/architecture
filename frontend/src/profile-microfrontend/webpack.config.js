@@ -5,7 +5,7 @@ module.exports = {
     entry: "./src/index.js",
     mode: "development",
     output: {
-        publicPath: "http://localhost:3003/",
+        publicPath: "http://localhost:3004/",
     },
     resolve: {
         extensions: [".js", ".jsx"],
@@ -27,13 +27,12 @@ module.exports = {
         new ModuleFederationPlugin({
             name: "core-microfrontend",
             filename: "remoteEntry.js",
+            remotes: {
+                core: "core-microfrontend@http://localhost:3002/remoteEntry.js",
+            },
             exposes: {
-                "./Main": "/components/Main",
-                "./Card": "/components/Card",
-                "./AddPlacePopup": "/components/AddPlacePopup",
                 "./EditProfilePopup": "/components/EditProfilePopup",
                 "./EditAvatarPopup": "/components/EditAvatarPopup",
-                "./ImagePopup": "/components/ImagePopup",
             },
             shared: ["react", "react-dom"]
         }),

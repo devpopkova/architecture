@@ -33,6 +33,7 @@ module.exports = {
                 "./ProtectedRoute": "/components/ProtectedRoute",
                 "./InfoTooltip": "/components/InfoTooltip",
                 "./PopupWithForm": "/components/PopupWithForm",
+                "./ImagePopup": "/components/ImagePopup",
                 "./CurrentUserContext": "/contexts/CurrentUserContext",
             },
             shared: ["react", "react-dom"]

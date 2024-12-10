@@ -32,8 +32,10 @@ module.exports = {
             name: "host",
             remotes: {
                 auth: "auth-microfrontend@http://localhost:3001/remoteEntry.js",
-                profilePhoto: "profile-photo-microfrontend@http://localhost:3002/remoteEntry.js",
-                core: "core-microfrontend@http://localhost:3003/remoteEntry.js",
+                core: "core-microfrontend@http://localhost:3002/remoteEntry.js",
+                place: "place-microfrontend@http://localhost:3003/remoteEntry.js",
+                profile: "profile-microfrontend@http://localhost:3004/remoteEntry.js",
+
             },
             shared: ["react", "react-dom"]
         }),
