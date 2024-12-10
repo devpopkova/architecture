@@ -1,3 +1,9 @@
+import "./styles/auth-form/auth-form.css";
+import "./styles/header/header.css";
+import "./styles/footer/footer.css";
+import "./styles/page/page.css";
+import "./styles/content/content.css";
+
 export { default as Header } from "./components/Header";
 export { default as Footer } from "./components/Footer";
 export { default as ImagePopup } from "./components/ImagePopup";
